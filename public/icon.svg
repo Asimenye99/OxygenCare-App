@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="50%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#042f2e" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background with subtle rounded squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#grad)" />
+
+  <!-- Oxygen Tank & Pulse Graphic -->
+  <g transform="translate(64, 56)" filter="url(#shadow)">
+    <!-- O2 Concentrator Cylinder / Medical cross silhouette -->
+    <!-- Valve / Regulator top -->
+    <rect x="162" y="30" width="60" height="26" rx="8" fill="#e6fffa" />
+    <rect x="180" y="10" width="24" height="24" rx="4" fill="#ffffff" />
+    <circle cx="216" cy="43" r="10" fill="#f59e0b" /> <!-- Pressure gauge -->
+
+    <!-- Concentrator Body -->
+    <rect x="92" y="60" width="200" height="290" rx="28" fill="#ffffff" stroke="#ccfbf1" stroke-width="6" />
+
+    <!-- Screen / Digital Gauge -->
+    <rect x="116" y="90" width="152" height="64" rx="10" fill="#0f172a" />
+    <text x="136" y="124" font-family="system-ui, sans-serif" font-weight="bold" font-size="22" fill="#34d399">95.4%</text>
+    <text x="216" y="124" font-family="system-ui, sans-serif" font-weight="600" font-size="14" fill="#94a3b8">O₂</text>
+    <text x="136" y="142" font-family="system-ui, sans-serif" font-weight="500" font-size="11" fill="#38bdf8">FLOW: 5.0 L/M</text>
+
+    <!-- Medical Plus / Pulse in Center -->
+    <rect x="172" y="180" width="40" height="70" rx="8" fill="#0d9488" />
+    <rect x="157" y="195" width="70" height="40" rx="8" fill="#0d9488" />
+
+    <!-- ECG pulse line over cross -->
+    <path d="M 120 280 L 150 280 L 165 250 L 180 305 L 195 265 L 210 280 L 264 280" 
+          fill="none" stroke="#f43f5e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Flow adjustment knob & filter vents -->
+    <circle cx="140" cy="320" r="12" fill="#0d9488" />
+    <line x1="170" y1="316" x2="244" y2="316" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" />
+    <line x1="170" y1="324" x2="244" y2="324" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- Malawi flag subtle accent badge on bottom corner -->
+  <g transform="translate(196, 420)">
+    <rect x="0" y="0" width="120" height="24" rx="6" fill="#111827" />
+    <rect x="0" y="8" width="120" height="8" fill="#dc2626" />
+    <rect x="0" y="16" width="120" height="8" rx="0 0 6 6" fill="#16a34a" />
+    <!-- Rising sun emblem -->
+    <circle cx="60" cy="8" r="5" fill="#ea580c" />
+  </g>
+</svg>

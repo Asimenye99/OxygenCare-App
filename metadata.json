@@ -1,0 +1,6 @@
+{
+  "name": "OxygenCare Malawi",
+  "description": "Specialised biomedical equipment maintenance platform coordinating oxygen concentrator care across hospitals, verified biomedical engineers, and PAM units in Malawi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
